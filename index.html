@@ -2,33 +2,40 @@
 <html>
     <head>
         <title> Jonic Mecija's Portfolio </title>
-        <style>
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            
             body{
                     background-color: #525050;
-                    background-image: url(https://jonicmecija.github.io/images/goBeach.jpg);
+                    /*background-image: url(https://jonicmecija.github.io/images/goBeach.jpg);
                     background-repeat: no-repeat;
                     background-position: 50% 50%;
-                    background-size: 100%;
-            }
+                    background-size: 100%;*/
+            } 
             h1 {
                     text-align: center;
-                    font-family: arial;
+                    font-family: arial;               
                     color: white;
             }
 
-            p { color: brown;
+            p { color: white;
                 font-family: arial;
                 text-indent: 25px;
+                font-size: 20px;
                 
             }
 
             img {
-                    width: 10%;
+                    width: 20%;
+                    position: center;
             }
         </style>
     </head>
-
+ 
 
 
     <body>
@@ -36,12 +43,22 @@
         <h1> Jonic Mecija's Website </h1>
         <hr />
 
-        <div>
-            
-                <img src="https://jonicmecija.github.io/images/jonic_img.jpg" />
-    
+        <div class="w3-right w3-hide-small">
+                <a href="#home" class="w3-button w3-black">HOME</a>
+                <a href="#about" class="w3-button w3-black">ABOUT</a>
+                <a href="#skills" class="w3-button w3-black">SKILLS</a>
+                <a href="#projects" class="w3-button w3-black">PROJECTS</a>
+                <a href="#contacts" class="w3-button w3-black">CONTACT</a>
         </div>
 
+        <div> 
+            <img src="https://jonicmecija.github.io/images/jonic_img.jpg" />    
+        </div>
+
+        <div 
+            class="w3-container" style="padding:64px 16px" id="about">
+        </div>
+        <h1>About Jonic Mecija</h1>
         <p>Hello World! My name is Jonic Mecija. I am creating this website 
                 in an attempt to learn more about HTML and CSS. I will also be using this
                 platform as a way to showcase my projects and life experience.</p>
