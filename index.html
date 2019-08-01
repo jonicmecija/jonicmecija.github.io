@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <title> Jonic Mecija </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <style>
-            body{
-                    background-color: #525050;
-                    background-image: url(https://jonicmecija.github.io/images/jonic_.JPG);;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
+            body, html {
+            height: 100%;
+            line-height: 1.8;
+            }
+
+            .jonicimg{
+                background-position: center;
+                background-image: url("https://jonicmecija.github.io/images/jonic_.JPG");
+                background-size: cover;
+                min-height: 100%;
             } 
 
             h1 {
                     margin-top: 100px;
                     text-align: center;
                     font-family: arial;               
-                    color: white;
+                    color: black;
             }
 
-            p { color: white;
+            p { color: black;
                 font-family: arial;
                 text-indent: 25px;
                 font-size: 20px;
@@ -49,25 +53,33 @@
         </div>
     
         <!-- Text on Header Image -->
-        <div class="w3-display-left w3-text-white" style="padding:40px">
+        <header class="jonicimg w3-display-container id="home">
+            <div class="w3-display-left w3-text-white" style="padding:40px">
                 <span class="title_name w3-jumbo w3-hide-small">Jonic Mecija</span><br>
                 <span class="w3-xxlarge w3-hide-large w3-hide-medium">Jonic Mecija</span><br>
-                <span class="w3-large">Cal State University, Long Beach<br>Computer Engineering B.S.</span>
-        </div>
+                <span class="w3-large">Cal State University, Long Beach <br>B.S. Computer Engineering</span>
+            </div>
+        </header>
 
         <!-- About Section -->
-        <div class="w3-container" style="padding:400px 16px"  id="about"></div>
-        <h1>About Jonic Mecija</h1>
-        <p>     
-            Hi welcome! My name is Jonic Mecija and I’m a 4th year Computer Engineering student at Cal State University, 
-            Long Beach. I like long walks on the beach and solving life’s most difficult problems. By living in California 
-            and majoring in engineering, I get to enjoy both of those on a daily basis.
-        </p>
-        <p>
-            While my academic courses at CSULB have mainly been focused on embedded systems and computer logic design, I have also gained 
-            a strong interest in software engineering. I intend to use my skills to work on a project that 
-            contributes a future of a better world. 
-        </p>
+        <div class="w3-container" style="padding:16px"  id="about"></div>
+        <h1>About Me</h1>
+        <div class="w3-row-padding w3-center" >
+            <div class="w3-large">
+              <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+              <p>     
+                Hi welcome! My name is Jonic Mecija and I’m a 4th year Computer Engineering student at Cal State University, 
+                Long Beach. I like long walks on the beach and solving life’s most difficult problems. By living in California 
+                and majoring in engineering, I get to enjoy both of those on a daily basis.
+            </p>
+            <p>
+                While my academic courses at CSULB have mainly been focused on embedded systems and computer logic design, I have also gained 
+                a strong interest in software engineering. I intend to use my skills to work on a project that 
+                contributes a future of a better world. 
+            </p>
+            </div>
+
+  
         <hr />
 
         <!-- Experience Section -->
