@@ -11,8 +11,8 @@
 
         <style>
             body, html {
-            height: 100%;
-            line-height: 1.8;
+                height: 100%;
+                line-height: 1.8;
             }
 
             .jonicimg{
@@ -23,19 +23,41 @@
             } 
 
             h1 {
-                    margin-top: 50px;
-                    text-align: center;
-                    font-family: Arial, Helvetica, sans-serif;               
-                    color: black;
+                margin-top: 50px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;               
+                color: black;
             }
 
-            p { color: #7c7c7c;
+            p { 
+                color: #7c7c7c;
                 font-family: Arial, Helvetica, sans-serif;
                 text-indent: 0px;
                 font-size: 20px;
                 margin: 2% 28% 2% 28%;
                 line-height: 40px;
             }
+            a{
+                text-decoration: none;
+            }
+
+            #skillIcon {
+                color: black;
+                text-align: center;
+                font-size: 75px;
+            }
+
+            .skillWrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+
         </style>
     </head>
     
@@ -79,7 +101,7 @@
                 While my academic courses at CSULB have mainly been focused on embedded systems and computer logic design, I've gained 
                 a strong interest in software engineering. I intend to use my skills to work on a project that 
                 contributes a future of a better world. 
-            </p>
+                </p>
             </div>
 
   
@@ -96,7 +118,8 @@
         <!-- Projects Section -->
         <div class="w3-container"  id="projects"></div>
         <h1> P R O J E C T S</h1>
-        <p align="left">Hello World! My name is Jonic Mecija. I am creating this website 
+        <p 
+            align="left">Hello World! My name is Jonic Mecija. I am creating this website 
                 in an attempt to learn more about HTML and CSS. I will also be using this
                 platform as a way to showcase my projects and life experience. Hello World! My name is Jonic Mecija. I am creating this website 
                 in an attempt to learn more about HTML and CSS. I will also be using this
@@ -109,36 +132,40 @@
         <!-- Skills Section -->
         <div class="w3-container" id="skills"></div>
         <h1> S K I L L S </h1>
-        <p align="left">Hello World! My name is Jonic Mecija. I am creating this website 
-            in an attempt to learn more about HTML and CSS. I will also be using this
-            platform as a way to showcase my projects and life experience. Hello World! My name is Jonic Mecija. I am creating this website 
-            in an attempt to learn more about HTML and CSS. I will also be using this
-            platform as a way to showcase my projects and life experience.Hello World! My name is Jonic Mecija. I am creating this website 
-            in an attempt to learn more about HTML and CSS. I will also be using this
-            platform as a way to showcase my projects and life experience.
+        <p align="left"> Computer Engineering at CSULB breaks down into two main focuses: embedded systems and computer logic design.
+            While most of my skills relate to embedded systems and computer architecture, I've gained an interest in software engineering
+            through all the school projects I've completed. 
         </p>
 
         
-        <div style="background-color: gray;  padding-top: 50px; padding-bottom: 50px;">
+        <div class="container-header skillWrapper" style="background-color: gray;  padding-top: 100px; padding-bottom: 100px;">
+                <div class = "w3-xxlarge" >
+                    <i class="devicon-c-plain " id="skillIcon"></i>
+                    <h6 id="skillText">Embedded C</h6>
+                </div>
 
-            <i class="devicon-c-plain" id="skillIcon"></i>
-            <h6 id="skillText">Embedded C</h6>
-          
-            <i class="devicon-python-plain" id="skillIcon"></i>
-            <h6 id="skillText">Python</h6>
+                <div class = "w3-xxlarge" >
+                    <i class="devicon-python-plain" id="skillIcon"></i>
+                    <h6 id="skillText">Python</h6>
+                </div>
 
-            <i class="devicon-cplusplus-plain" id="skillIcon"></i>
-            <h6 id="skillText">C++</h6>
+                <div class = "w3-xxlarge" >
+                    <i class="devicon-cplusplus-plain" id="skillIcon"></i>
+                    <h6 id="skillText">C++</h6>
+                </div>
 
-            <i class="devicon-html5-plain" id="skillIcon"></i>
-            <h6 id="skillText">HTML5</h6>
+                <div class = "w3-xxlarge" >
+                    <i class="devicon-html5-plain" id="skillIcon"></i>
+                    <h6 id="skillText">HTML5</h6>
+                </div>
 
-            <i class="devicon-css3-plain" id="skillIcon"></i>
-            <h6 id="skillText">CSS3</h6>
-
+                <div class = "w3-xxlarge" >
+                    <i class="devicon-css3-plain" id="skillIcon"></i>
+                    <h6 id="skillText">CSS3</h6>
+                </div>
         </div>
-
         
+
         <hr />
 
         <!-- Contact Section -->
@@ -148,6 +175,9 @@
             Email: jonic.mecija@student.csulb.edu
         </p>
         <br>
+        <a href="https://github.com/jonicmecija" target="_blank"><i class="devicon-github-plain w3-hover-opacity w3-xxlarge"></i></a> 
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+
         Website still in progress. <br>
         <!-- This is a random link to google -->
         <a href ="https://www.google.com"> This is a random link to google. </a>
