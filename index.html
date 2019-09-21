@@ -34,7 +34,7 @@
                 font-family: Arial, Helvetica, sans-serif;
                 text-indent: 0px;
                 font-size: 20px;
-                margin: 2% 28% 2% 28%;
+                margin: 2% 23% 2% 23%;
                 line-height: 40px;
             }
 
@@ -58,6 +58,18 @@
                 margin: 0 auto;
             }
 
+            .column {
+                float: left;
+                width: 50%;
+                border: 10px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
 
         </style>
     </head>
@@ -92,7 +104,6 @@
         <h1>A B O U T &nbsp; M E</h1>
         <div class="w3-row-padding w3-center" >
             <div class="w3-large">
-              <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
               <p align="left">     
                 Hi welcome! My name is Jonic Mecija and I’m a 4th year Computer Engineering student at Cal State University, 
                 Long Beach. I like long walks on the beach and solving life’s most difficult problems. By living in California 
@@ -110,16 +121,41 @@
         <!-- Experience Section -->
         <div class="w3-container"  id="experience"></div>
         <h1> E X P E R I E N C E</h1>
-        <p align="left">     
-            I previously worked at L3 Technologies as Test Engineering Intern. 
+        <p align="left">
+                I worked at L3 Technologies in Torrance, CA as an engineering intern during the Summer of 2018. 
+                My main focus was in the testing and development of the TWT’s that are placed on military and commercial satellites. 
+                I was able to gain hands on lab experience with different RF tools and components. One of my side tasks were assisting 
+                in data management on the internal company website through the use of basic HTML, CSS, and PHP. I was fortunate to receive 
+                exposure to the aerospace industry and understand how different systems and processes are executed.
         </p>
-        <hr />
+        <!--
+        <div class="row">
+                <div class="column">
+                    <img src ="images/l3.png" width="300" height="200">
+                    <p >
+                            I worked at L3 Technologies in Torrance, CA as an engineering intern during the Summer of 2018. 
+                            My main focus was in the testing and development of the TWT’s that are placed on military and commercial satellites. 
+                            I was able to gain hands on lab experience with different RF tools and components. One of my side tasks were assisting 
+                            in data management on the internal company website through the use of basic HTML, CSS, and PHP. I was fortunate to receive 
+                            exposure to the aerospace industry and understand how different systems and processes are executed.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src ="images/uniqlo.png" width="450" height="400">
+                    <p>
+                            More recently, I worked part-time at UNIQLO, a Japanese owned retail company focused on simple, 
+                            high-quality, and sustainable clothing. 
+                    </p>
+                </div>
+              </div>
+        <hr />-->
         
+
         <!-- Projects Section -->
         <div class="w3-container"  id="projects"></div>
         <h1> P R O J E C T S</h1>
-        <p 
-            align="left">Hello World! My name is Jonic Mecija. I am creating this website 
+        <p align="left">
+            Hello World! My name is Jonic Mecija. I am creating this website 
                 in an attempt to learn more about HTML and CSS. I will also be using this
                 platform as a way to showcase my projects and life experience. Hello World! My name is Jonic Mecija. I am creating this website 
                 in an attempt to learn more about HTML and CSS. I will also be using this
@@ -176,7 +212,7 @@
         <!-- Contact Section -->
         <div class="w3-container" style="padding:128px 16px" id="contacts"></div>
         <h1>C O N T A C T</h1>
-        <p >
+        <p>
             Email: jonic.mecija@student.csulb.edu
         </p>
         <br>
