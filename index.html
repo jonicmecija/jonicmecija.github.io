@@ -20,6 +20,7 @@
                 background-size: cover;
                 min-height: 100%;
             } 
+            
 
             h1 {
                 margin-top: 50px;
@@ -57,23 +58,23 @@
                 margin: 0 auto;
             }
 
-            .column {
-                float: left;
-                width: 50%;
-                border: 10px;
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
             html {
                 scroll-behavior: smooth;
             }
 
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
             
 
         </style>
@@ -129,6 +130,8 @@
                 in data management on the internal company website through the use of basic HTML, CSS, and PHP. I was fortunate to receive 
                 exposure to the aerospace industry and understand how different systems and processes are executed.
         </p>
+        <hr />
+
         <!--
         <div class="row">
                 <div class="column">
@@ -164,6 +167,24 @@
                 in an attempt to learn more about HTML and CSS. I will also be using this
                 platform as a way to showcase my projects and life experience.
         </p>
+
+        <div class="row">
+            <div class="column">
+                <img src= "images/cubeSolver.jpg" style = "max-width: 80%;">
+                <h3>Rubik's Cube Solver</h3>
+
+            </div>
+            <div class="column">
+                <img src= "images/simplePoro.png" style = "max-width: 103%;">
+                <h3>Web-based Productivity App</h3>
+
+            </div>
+            <div class="column">
+                <img src= "images/smartCar.png" style = "max-width: 60%;">
+                <h3>Smart Car</h3>
+            </div>
+          </div>
+
         <hr />
 
         <!-- Skills Section -->
