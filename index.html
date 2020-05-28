@@ -4,87 +4,17 @@
         <title> Jonic Mecija </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-       
-
-        <style>
-            body, html {
-                height: 100%;
-                line-height: 1.8;
-            }
-
-            .jonicimg{
-                background-position: center;
-                background-image: url("images/nice1.jpg");
-                background-size: cover;
-                min-height: 100%;
-            } 
-            
-
-            h1 {
-                margin-top: 50px;
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;               
-                color: black;
-            }
-
-            p { 
-                color: #7c7c7c;
-                font-family: Arial, Helvetica, sans-serif;
-                text-indent: 0px;
-                font-size: 20px;
-                margin: 2% 23% 2% 23%;
-                line-height: 40px;
-            }
-
-            a{
-                text-decoration: none;
-            }
-
-            #skillIcon {
-                color: black;
-                text-align: center;
-                font-size: 75px;
-            }
-
-            .skillWrapper {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding-top: 50px;
-                padding-bottom: 50px;
-                width: 90%;
-                margin: 0 auto;
-            }
-
-            html {
-                scroll-behavior: smooth;
-            }
-
-            /* Three image containers (use 25% for four, and 50% for two, etc) */
-            .column {
-            float: left;
-            width: 33.33%;
-            padding: 20px;
-            }
-
-            /* Clear floats after image containers */
-            .row::after {
-            content: "";
-            clear: both;
-            display: table;
-            }
-            
-
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     
     <body>
         <!-- Display the navigation bar -->
-        <div class="w3-top">
+        <!-- <div class="w3-top">
             <div class="w3-bar w3-black w3-card" id="myNavbar">
-              <a href="index.html" class="w3-button w3-black w3-wide">[Jonic Mecija]</a>
+                <a href="index.html" class="w3-button w3-black w3-wide">[Jonic Mecija]</a>
                 <div class="w3-right w3-hide-small">
                     <a href="#about" class="w3-button w3-black w3-wide">About</a>
                     <a href="#experience" class="w3-button w3-black w3-wide">Experience</a>
@@ -93,45 +23,95 @@
                     <a href="#contacts" class="w3-button w3-black w3-wide">Contact</a>
                 </div>
             </div>
-        </div>
-    
-        <!-- Text on Header Image -->
-        <header class="jonicimg w3-display-container id="home">
-            <div class="w3-display-left w3-text-black" style="padding:40px">
-                <span class="title_name w3-jumbo w3-hide-small">Jonic Mecija</span><br>
-                <span class="w3-xxlarge w3-hide-large w3-hide-medium">Jonic Mecija</span><br>
-                <span class="w3-large">Cal State University, Long Beach <br>B.S. Computer Engineering</span>
-            </div>
-        </header>
+        </div> -->
 
-        <!-- About Section -->
-        <div class="w3-container" style="padding:16px"  id="about"></div>
-        <h1>A B O U T &nbsp; M E</h1>
-        <div class="w3-row-padding w3-center" >
-            <div class="w3-large">
-              <p align="left">     
-                Hi welcome! My name is Jonic Mecija and I’m a 4th year Computer Engineering student attending California State University, 
-                Long Beach. While my academic courses at CSULB have mainly been focused on embedded systems and computer logic design, 
-                I've gained a strong interest in software engineering. I've recently gotten more interested in front-end web development, as it 
-                allows for a fusion between two things im interested in: software and visual art/design.
-                </p>
+        <div class="container">
+            <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+                <a href="index.html" class="navbar-brand">Jonic Mecija </a>
+                <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navLinks">
+                    <ul class="navbar-nav ml-auto" style="padding-right: 3rem;">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"> About</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="#experience" class="nav-link">Experience</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contacts" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div id="header1" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mepic">
+                        <img src="images/me.jpg" width="220rem" >
+                    </div>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <h1>Jonic Mecija</h1>
+                        <h4>B.S. Computer Engineering</h4>
+                        <h4>California State University, Long Beach</h4>
+                        <hr>
+                        <button class="btn btn-default btn-lg" style="padding-top: 4rem;"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+        <!-- About Section -->
+        <div class="container section" id="experience">
+            <h1>A B O U T &nbsp; M E</h1>
+            <p>     
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ipsum, blanditiis nulla 
+                quod sed ad dolorem iusto odit minima ex quam mollitia non. Omnis eligendi fuga provident impedi
+                t asperiores? Praesentium iste numquam aperiam vitae. Nesciunt ut et obcaecati culpa provident pe
+                rferendis similique magni quidem voluptates, sit sunt ratione cum amet assumenda accusamus nis
+                i. Molestiae, quae. Deserunt optio neque aliquid quaerat sed, dolores ea praesentium provident v
+                oluptas ut nisi dolor? Voluptate ullam, molestiae modi mollitia fuga harum velit aliquam minus n
+                isi nesciunt impedit blanditiis quod quae dicta. Voluptate deserunt cupiditate dignissimos est qu
+                am ipsam, beatae nulla, in veniam velit quas eius?
+            </p>
+            <hr>
+        </div>
+        
 
   
-        <hr />
 
         <!-- Experience Section -->
-        <div class="w3-container"  id="experience"></div>
-        <h1> E X P E R I E N C E</h1>
-        <p align="left">
-                I worked at L3 Technologies in Torrance, CA as an engineering intern during the Summer of 2018. 
-                My main focus was in the testing and development of the TWT’s that are placed on military and commercial satellites. 
-                I was able to gain hands on lab experience with different RF tools and components. One of my side tasks were assisting 
-                in data management on the internal company website through the use of basic HTML, CSS, and PHP. I was fortunate to receive 
-                exposure to the aerospace industry and understand how different systems and processes are executed.
-        </p>
-        <hr />
-
+        <div class="container section" id="about">
+            <h1>E X P E R I E N C E</h1>
+            <p>     
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ipsum, blanditiis nulla 
+                quod sed ad dolorem iusto odit minima ex quam mollitia non. Omnis eligendi fuga provident impedi
+                t asperiores? Praesentium iste numquam aperiam vitae. Nesciunt ut et obcaecati culpa provident pe
+                rferendis similique magni quidem voluptates, sit sunt ratione cum amet assumenda accusamus nis
+                i. Molestiae, quae. Deserunt optio neque aliquid quaerat sed, dolores ea praesentium provident v
+                oluptas ut nisi dolor? Voluptate ullam, molestiae modi mollitia fuga harum velit aliquam minus n
+                isi nesciunt impedit blanditiis quod quae dicta. Voluptate deserunt cupiditate dignissimos est qu
+                am ipsam, beatae nulla, in veniam velit quas eius?
+            </p>
+            <hr>
+        </div>
         <!--
         <div class="row">
                 <div class="column">
@@ -156,7 +136,7 @@
         
 
         <!-- Projects Section -->
-        <div class="w3-container"  id="projects"></div>
+        <!-- <div class="w3-container"  id="projects"></div>
         <h1> P R O J E C T S</h1>
         <p align="left">
             Hello World! My name is Jonic Mecija. I am creating this website 
@@ -185,17 +165,17 @@
             </div>
           </div>
 
-        <hr />
+        <hr /> -->
 
         <!-- Skills Section -->
-        <div class="w3-container" id="skills"></div>
+        <!-- <div class="w3-container" id="skills"></div>
         <h1> S K I L L S </h1>
         <p align="left"> Computer Engineering at CSULB breaks down into two main focuses: embedded systems and computer logic design.
             While most of my skills relate to embedded systems and computer architecture, I've gained an interest in front-end web development. 
-        </p>
+        </p> -->
 
         <!-- Skills Icons -->
-        <div class="container-header skillWrapper" style="background-color: gray;  padding-top: 100px; padding-bottom: 100px;">
+        <!-- <div class="container-header skillWrapper" style="background-color: gray;  padding-top: 100px; padding-bottom: 100px;">
             <div class = "w3-xxlarge" >
                 <i class="devicon-python-plain" id="skillIcon"></i>
                 <h6 id="skillText">Python</h6>
@@ -225,14 +205,14 @@
                 <i class="devicon-javascript-plain" id="skillIcon"></i>
                 <h6 id="skillText">JavaScript</h6>
             </div>
-        </div>
+        </div> -->
         
 
-        <hr />
+        <!-- <hr /> -->
 
         <!-- Contact Section -->
-        <div class="w3-container" style="padding:128px 16px" id="contacts"></div>
-        <h1>C O N T A C T</h1>
+        <!-- <div class="w3-container" style="padding:128px 16px" id="contacts"></div>
+        <h1>C O N T A C T <i class="far fa-address-book"></i> </h1>
         <p>
             Email: jonic.mecija@student.csulb.edu
         </p>
@@ -240,8 +220,18 @@
         <a href="https://github.com/jonicmecija" target="_blank"><i class="devicon-github-plain w3-hover-opacity w3-xxlarge"></i></a> 
         <i class="fa fa-linkedin w3-hover-opacity"></i>
 
-        Website still in progress. <br>
+        Website still in progress. <br> -->
         <!-- This is a random link to google -->
-        <a href ="https://www.google.com"> This is a random link to google. </a>
+        <!-- <a href ="https://www.google.com"> This is a random link to google. </a> -->
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script src="app.js">
+            
+        </script>
+
     </body>
 </html>
