@@ -17,6 +17,7 @@ body,html {
 
 /* pic of me */
 img{
+    margin-top: 5%;
     border-radius: 50%;
     box-shadow: 0px 6px 5px black;
     -moz-box-shadow: 0px 6px 5px black;
@@ -27,6 +28,12 @@ img{
 #mainNavbar .navbar-brand{
     color: black;
     font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#mainNavbar .navbar-brand:hover{
+    color: gray;
+    transition: color 800ms;
 }
 
 #mainNavbar .navbar-nav > li{
@@ -35,6 +42,8 @@ img{
 
 .nav-item{
     text-align: right;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 #mainNavbar .nav-link{
@@ -43,6 +52,7 @@ img{
 
 #mainNavbar .nav-link:hover{
     color: gray;
+    transition: color 800ms;
 }
 
 #mainNavbar{
@@ -65,9 +75,9 @@ img{
     text-align: center;
 }
 
+
 #header1 h4{
     font-weight: 300;
-
     font-family: 'Poppins', sans-serif;
 }
 
@@ -79,7 +89,7 @@ img{
 }
 
 .content hr {
-    width: 500px;
+    width: 50%;
     margin: auto;
     border-top: 1px solid gray;
     border-bottom: 1px solid rgba(0,0,0,0.2);
@@ -94,19 +104,27 @@ img{
 
 .section{
     padding-bottom: 5rem;
+    
+}
+
+.section h1{
+    font-family: 'Poppins', sans-serif;   
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 hr{
     border: 0;
     width: 80%;
-    margin: auto;
+    margin-top: 4rem;
+    /* margin: auto; */
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;   
-     margin-top: 3rem;
+    margin-top: 3rem;
     text-align: center;
     color: black;
     font-weight: 400;
@@ -114,13 +132,20 @@ h1 {
 p { 
     color: #ffffff;
     text-indent: 0px;
-    font-size: 20px;
-    margin: 2% 23% 2% 23%;
-    line-height: 40px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    /* margin: 2% 23% 2% 23%; */
+    margin: auto;
+    /* line-height: 40px; */
+    line-height: 2.5rem;
 }
 a{
     text-decoration: none;
 }
 
 
-
+@media (max-width:767px) {
+    .navbar{
+      background-color:white;
+    }
+  }
